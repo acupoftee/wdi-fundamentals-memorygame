@@ -1,0 +1,42 @@
+
+p {
+	font-family: "Droid Serif", serif;
+	line-height: 26px;
+	font-size: 18px;
+}
+
+body {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	color: #F15B31;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.headers {
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #0D2C40
+}
+
+#title {
+	font-weight: 400;
+	font-size: 45px;
+}
+
+#instruction_header {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+#socials {
+	font-weight: 600;
+	font-size: 18px;
+}
+
