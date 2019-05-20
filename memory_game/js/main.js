@@ -28,15 +28,21 @@ var score = 0;
 var win = false;
 var scoreText = document.getElementById('score');
 
-// utility function to add challenge to the game!
-// function shuffleCards() {
-// 	for (var i = 0; i < cards.length; i++) {
-// 		var randomCard = Math.floor((Math.random() * cards.length) + 1);
-// 		var currentCard = cards[i];
-// 	}
-// }
+// utility function to add challenge to the game once it's scaled!
+// to try the game out with a shuffle, 
+// feel free to uncomment line 45 and line 93!
+function shuffleCards() {
+	for (var i = 0; i < cards.length; i++) {
+		var randomIndex = Math.floor((Math.random() * cards.length));
+
+		var tempCard = cards[i];
+		cards[i] = cards[randomIndex];
+		cards[randomIndex] = tempCard;
+	}
+}
 
 function createBoard() {
+	//shuffleCards();
 	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
 		cardElement.setAttribute('src', "images/back.png");
@@ -84,6 +90,7 @@ function resetBoard() {
 		scoreText.textContent = score;
 	}
 	cardsInPlay = [];
+	//shuffleCards();
 }
 
 var resetButton = document.getElementsByTagName('button')[0];
